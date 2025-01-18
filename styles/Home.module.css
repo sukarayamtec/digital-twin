@@ -1,0 +1,199 @@
+.container {
+  background-color: #1a1a1a;
+  /* background-color: #777; */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjusted for top-alignment */
+  padding: 20px;
+}
+
+.main {
+  text-align: center;
+  margin-top: 50px; /* Move content down slightly */
+}
+
+.title {
+  font-size: 4rem; /* Larger heading */
+  font-weight: bold;
+  margin: 0;
+  padding-top: 20px; /* Move heading closer to the top */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.selectText {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 200px;
+}
+.greenText {
+  color: #00b894; /* Green color */
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap; /* Ensures buttons wrap if they overflow */
+  gap: 200px; /* Adds consistent spacing between all buttons */
+  justify-content: center; /* Centers the buttons */
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+
+.fadingLine {
+  margin-top: 40px; /* Space between buttons and the line */
+  width: 100%; /* Make it span the container */
+  height: 2px; /* Height of the line */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+}
+
+.addKnowledge {
+  margin-top: 50px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.addKnowledgeButton {
+  margin-top: 10px;
+  background-color: #00b894;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.addKnowledgeButton:hover {
+  background-color: #019874;
+}
+
+.robotImage {
+  margin-top: 30px;
+  height: 150px;
+}
+
+.heading-pad{
+  /* padding-bottom: 300px; */
+  padding-top: 600px;
+}
+
+
+.robotImage {
+  width: 300px; /* Increase the size of the image */
+  height: auto; /* Maintain aspect ratio */
+  position: fixed; /* Fix it to the bottom-left corner */
+  bottom: 20px; /* Gap from the bottom margin */
+  left: 20px; /* Gap from the left margin */
+  z-index: 10; /* Ensure it appears on top of other elements */
+}
+
+.menuButton {
+  position: fixed; /* Fixed position in the top-right corner */
+  top: 20px; /* Gap from the top */
+  right: 20px; /* Gap from the right */
+  width: 50px; /* Size of the button */
+  height: 50px;
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 10; /* Ensures it appears above other elements */
+}
+
+/* Highlighted Button */
+.highlighted {
+  background-color: #00b894; /* Green highlight for the button */
+  color: white; /* White text for contrast */
+  font-weight: bold; /* Makes the text bold */
+  border: 2px solid #00b894; /* Optional: Add a border for emphasis */
+}
+
+
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialogBox {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%; /* 60% of the screen */
+  max-width: 800px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #0f9960; /* Green border */
+}
+
+.closeButton {
+  position: absolute; /* Position relative to the dialog box */
+  top: 10px; /* Distance from the top edge of the dialog box */
+  right: 10px; /* Distance from the right edge of the dialog box */
+  background: transparent; /* No background */
+  border: none; /* No border */
+  font-size: 24px; /* Larger font size for better visibility */
+  color: white; /* White color for better contrast */
+  cursor: pointer; /* Pointer cursor for clickability */
+}
+
+
+.chooseFileButton {
+  background-color: #0f9960;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noFileChosen {
+  margin-top: 10px;
+  color: #ccc;
+
+}
+.pdfList{
+  padding-top: 40px;
+}
+.pdfList ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pdfList li {
+  color: white;
+  margin: 5px 0;
+}
+
+.addKnowledgeButton {
+  background: transparent;
+  border: 2px solid #0f9960; /* Green border */
+  color: #0f9960; /* Green text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addKnowledgeButton:hover {
+  background: #0f9960; /* Green background */
+  color: white;
+}

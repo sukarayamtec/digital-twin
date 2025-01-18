@@ -1,0 +1,15 @@
+.header {
+    position: absolute; /* Positioning the header */
+    top: 30px; /* Moves the logo down slightly from the top */
+    left: 30px; /* Moves the logo slightly inward from the left */
+    display: flex; /* Ensure alignment (if needed) */
+    align-items: center; /* Vertically center logo (if needed in the future) */
+    z-index: 10; /* Ensures it stays on top of other elements */
+  }
+  
+  .logo {
+    height: 80px; /* Increased size */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Optional: Change cursor to indicate interactivity */
+  }
+  
